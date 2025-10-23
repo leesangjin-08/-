@@ -42,7 +42,6 @@
 					<td><%=prod.getPriceString() %></td>
 				</tr>			
 	<%
-				if()
 			}
 	%>
 			</table>
@@ -50,8 +49,7 @@
 	<%
     		if (payData.isPC) {
 	%>
-	//ここから***************************************************************************
-    		<p>パソコン合計：<%=payData.getCategoryTotalPrice() %> になります。</p>
+    		<p>パソコン合計：<%=payData.getCategoryTotalPrice(Category.パソコン) %> になります。</p>
 	<%
     		}
 	%>
