@@ -47,11 +47,7 @@
 			</table>
 			<br>
 	<%
-    		if (payData.isPC) {
-	%>
-    		<p>パソコン合計：<%=payData.getCategoryTotalPrice(Category.パソコン) %> になります。</p>
-	<%
-    		}
+ 
 	%>
 			<p>合計：<%=payData.getTotalPriceString() %> になります。</p>
 	<%

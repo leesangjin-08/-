@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<h2>ログイン画面</h2>
+	<h3>ログイン画面</h3>
 
 	<form action="login-servlet" method="post">
 		ユーザID： <input type="text" name="userId" required><br>
