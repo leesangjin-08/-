@@ -123,15 +123,15 @@ td {
 .category-section {
     display: flex;
     flex-direction: column; /* 세로 정렬 유지 */
-    align-items: flex-end;  /* h3를 오른쪽 끝으로 */
+    /*align-items: flex-end;   h3를 오른쪽 끝으로 */
 }
 
 .category-title {
 	display: inline-block;  /* 블록으로 변환하지 않고 크기 유지 */
     background-color: #0a0a2a;
     color: #66FFCC;
-	padding: 2px 6px;   /* 위아래 4px, 좌우 8px로 줄임 */
-	font-size: 22px;     /* 글자 크기 줄임 */
+/*	padding: 2px 6px;    위아래 4px, 좌우 8px로 줄임 
+	font-size: 22px;      글자 크기 줄임 */
     cursor: pointer;
 }
 .category-table {
@@ -143,5 +143,41 @@ td {
 .category-table th, .category-table td {
     border: 1px solid #66FFCC;
     padding: 5px;
+}
+
+/*product card style*/
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; /* 중앙 정렬 */
+    margin-top: 10px;
+}
+
+.product-card {
+    background-color: #0a0a2a;
+    color: #66FFCC;
+    padding: 10px;
+    border: 1px solid #66FFCC;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+	max-height: 220px;
+    margin-bottom: 8px;
+}
+
+.product-card h4 {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.product-card p {
+    margin: 5px 0;
+    font-size: 13px;
 }
 

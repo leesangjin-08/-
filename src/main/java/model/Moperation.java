@@ -54,16 +54,15 @@ public class Moperation {
 		Store store = new Store("エレクトロニクス", new ArrayList<Product>());
 		
 		// 商品追加
-		store.add(new Product(Category.ゲーム機, "A110", "商品01", 2000));
-		store.add(new Product(Category.ゲーム機, "A120", "商品02", 3600));
-		store.add(new Product(Category.ゲーム機, "A130", "商品03", 3900));
-		store.add(new Product(Category.スマホ, "A210", "商品04", 2900));
-		store.add(new Product(Category.スマホ, "A220", "商品05", 9800));
-		store.add(new Product(Category.スマホ, "A230", "商品06", 1900));
-		store.add(new Product(Category.パソコン, "A310", "商品07", 3500));
-		store.add(new Product(Category.パソコン, "A320", "商品08", 11000));
-		store.add(new Product(Category.パソコン, "A330", "商品09", 4200));
-		store.add(new Product(Category.パソコン, "A340", "商品10", 7800));
+		store.add(new Product(Category.ゲーム機, "switch", "Nintendo Switch", 29980));
+		store.add(new Product(Category.ゲーム機, "ps4", "PlayStation 4", 34980));
+		store.add(new Product(Category.ゲーム機, "xboxx", "xbox series x", 87980));
+		store.add(new Product(Category.スマホ, "iphone17", "iPhone17", 129800));
+		store.add(new Product(Category.スマホ, "iphone17pro", "iPhone17 Pro", 179800));
+		store.add(new Product(Category.スマホ, "iphone17proMax", "iPhone17 Pro Max", 199800));
+		store.add(new Product(Category.スマホ, "galaxyZFold7", "Galaxy Z Fold 7", 255374));
+		store.add(new Product(Category.パソコン, "LAVIE_DirectA27", "LAVIE Direct A27", 244800));
+		store.add(new Product(Category.パソコン, "OMEN_35L", "OMEN 35L", 443300));
 		
 		return store;
 	}

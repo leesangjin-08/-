@@ -35,7 +35,6 @@
 	        categoryMap.get(cat).add(prod); // add product that category
 	    }
 	    
-		//if (listProd.size() > 0) {
 	%>
 
 			<h2>商品選択</h2>
@@ -49,6 +48,23 @@
 			
 		<div class="category-section">
 			<h3 class="category-title"><%=category %></h3>
+	    <div class="product-list" style="display:none;">
+        <% for (int idx = 0; idx < products.size(); idx++) {
+               Product prod = products.get(idx);
+        %>
+        <div class="product-card">
+            <img src="images/<%=prod.getId()%>.png" alt="<%=prod.getName()%>">
+            <h4><%=prod.getName()%></h4>
+            <p><%=prod.getPriceString()%></p>
+            <form action="add-prod-servlet" method="POST">
+                <input type="hidden" name="idx" value="<%=idx%>">
+                <input type="submit" value="選択">
+            </form>
+        </div>
+        <% } %>
+    </div>
+    
+    <%--      ***this is past table mode***
 
 			<table class="select-list category-table">
 			<tr>
@@ -73,7 +89,7 @@
 	<%
 			}
 	%>
-			</table>
+			</table> --%>
 </div>
 	<%
 		}
@@ -84,11 +100,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const titles = document.querySelectorAll(".category-title");
     titles.forEach(title => {
         title.addEventListener("click", function() {
-            const table = this.nextElementSibling;
-            if (table.style.display === "none" || table.style.display === "") {
-                table.style.display = "table";
+            const list = this.nextElementSibling;
+            if (list.style.display === "none" || list.style.display === "") {
+                list.style.display = "flex";
             } else {
-                table.style.display = "none";
+                list.style.display = "none";
             }
         });
     });
