@@ -1,10 +1,16 @@
 @charset "UTF-8";
 
 body {
-	font-family: BIZ UDPゴシック;
-	background-color: rgb(86, 86, 86);
-	color: lightcoral;
+	font-family:sans-serif;
+	background-color: #0a0a2a;
+	color: #66FFCC;
 	text-align: center;
+	
+	background-image: url('images/ChatGPT_BGImage.png'); /* 이미지 경로 */
+	background-size: cover;       /* 화면 전체 채우기 */
+	background-position: center;  /* 중앙 기준 배치 */
+	background-repeat: no-repeat; /* 반복 방지 */
+	background-attachment: fixed; /* 스크롤해도 고정 */
 }
 
 h1 {
@@ -20,10 +26,19 @@ h2 {
 
 h3 {
 	font-size: 28px;
-    background-color: rgb(0, 102,255);
+	background: linear-gradient(90deg, #00f, #0ff);
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
+	width: 400px;
+	height: 60px;
+	
+	border: 2px solid #0ff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px #0ff, 0 0 20px #00f; 
+	
+	line-height: 60px;
+	text-align: center;
+	text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #00f;
     color: rgb(255, 255, 255);
 }
 
@@ -40,8 +55,8 @@ table {
 	border: 1px solid #5e696c;
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%; 					/* テーブル横幅 */
-	border-collapse:  collapse; 	/* 境界線を共有 */
+	width: 80%; 					
+	border-collapse:  collapse; 	
 }
 
 th {
@@ -59,12 +74,74 @@ td {
 
 .select-list {
     background-color: #eee8aa;
+	color: black;
 }
 
 .cart-list {
     background-color: #afeeee;
+	color: black;
 }
 
 .pay-list {
     background-color: #ffe4e1;
+	color: black;
 }
+
+/*login style change*/
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* 가로 중앙 */
+    justify-content: center; /* 세로 중앙 */
+    height: 100vh;        /* 화면 전체 높이 */
+}
+
+.login-box {
+    background-color: #001f3f;  /* 짙은 블루 배경 */
+	color: #66FFCC;
+    padding: 30px 40px;          /* 안쪽 여백 */
+    border-radius: 12px;         /* 모서리 둥글게 */
+    box-shadow: 0 0 15px #0ff, 0 0 30px #00f; /* 네온 느낌 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;                /* 박스 가로 크기 */
+}
+
+.button {
+	background: linear-gradient(90deg, #00ffff, #00ff99);
+	box-shadow: 0 0 2px #00ff99, 0 0 4px #00ffff;
+	color: #003366;
+	font-weight: bold;
+	border-radius: 6px;
+	padding: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+/*category style*/
+.category-section {
+    display: flex;
+    flex-direction: column; /* 세로 정렬 유지 */
+    align-items: flex-end;  /* h3를 오른쪽 끝으로 */
+}
+
+.category-title {
+	display: inline-block;  /* 블록으로 변환하지 않고 크기 유지 */
+    background-color: #0a0a2a;
+    color: #66FFCC;
+	padding: 2px 6px;   /* 위아래 4px, 좌우 8px로 줄임 */
+	font-size: 22px;     /* 글자 크기 줄임 */
+    cursor: pointer;
+}
+.category-table {
+    width: 100%;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+    display: none;
+}
+.category-table th, .category-table td {
+    border: 1px solid #66FFCC;
+    padding: 5px;
+}
+

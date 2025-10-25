@@ -38,10 +38,10 @@ public class Cart {
 		return userId;
 	}
 	
-	public Boolean isPC = false;
-	public Boolean isPh = false;
-	public Boolean isG = false;
-
+	/*	public Boolean isPC = false;
+		public Boolean isPh = false;
+		public Boolean isG = false;
+	*/
 	/**
 	 * @return listItem
 	 */
@@ -73,28 +73,28 @@ public class Cart {
 		listProd.clear();
 	}
 
-	public int getCategoryNum(Category category) {
-		int num = 0;
-		for (Product pr : listProd) {
-			if(pr.getCategory() == category) { num++; }
-		}
-		if (isPC == false && category == Category.パソコン) { isPC = true; }
-		if (isPh == false && category == Category.スマホ) { isPh = true; }
-		if (isG == false && category == Category.ゲーム機) { isG = true; }
-		return num;
-	}
-	
-	public int getCategoryTotalPrice(Category category) {
-		int cTotal = 0;
-		for (Product pr : listProd)
-		{
-			if(pr.getCategory() == category)
-			{
-				cTotal += pr.getPrice();
+	/*	public int getCategoryNum(Category category) {
+			int num = 0;
+			for (Product pr : listProd) {
+				if(pr.getCategory() == category) { num++; }
 			}
-		}
-		return cTotal;
-	}
+					if (isPC == false && category == Category.パソコン) { isPC = true; }
+					if (isPh == false && category == Category.スマホ) { isPh = true; }
+					if (isG == false && category == Category.ゲーム機) { isG = true; }
+			return num;
+		}*/
+	
+	/*	public int getCategoryTotalPrice(Category category) {
+			int cTotal = 0;
+			for (Product pr : listProd)
+			{
+				if(pr.getCategory() == category)
+				{
+					cTotal += pr.getPrice();
+				}
+			}
+			return cTotal;
+		}*/
 	
 	/**
 	 * カート内の商品の合計金額を取得する

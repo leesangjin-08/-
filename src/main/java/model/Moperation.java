@@ -51,7 +51,7 @@ public class Moperation {
 	private Store makeStore() {
 
 		// 店舗情報作成
-		Store store = new Store("キャル商店", new ArrayList<Product>());
+		Store store = new Store("エレクトロニクス", new ArrayList<Product>());
 		
 		// 商品追加
 		store.add(new Product(Category.ゲーム機, "A110", "商品01", 2000));

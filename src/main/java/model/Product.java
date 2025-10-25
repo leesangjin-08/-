@@ -77,8 +77,8 @@ public class Product {
 		return price;
 	}
 	
-    public Category getCategory() {
-        return category;
+    public String getCategory() {
+        return category.toString();
     }
     
 	/**
