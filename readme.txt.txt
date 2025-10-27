@@ -1,12 +1,6 @@
-1. When category click -> move that category page = people can choose each item
+2. Make Order mode(add, remove mode) - each product go each category(first optional)
 
-Display each category total(optional)
-
-2.  DIsplay product image for each product
-
-3. Make Order mode(add, remove mode) - each product go each category(first optional)
-
-4. DB(optional)
+1. DB(optional) < store how much user payed. and desplay -> where?(think this)
 
 
 

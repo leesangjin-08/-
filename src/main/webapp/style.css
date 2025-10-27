@@ -119,6 +119,14 @@ td {
 	transition: all 0.3s ease;
 }
 
+.navlink {
+	color: white;
+}
+
+.navlink:hover {
+	color: purple;
+}
+
 /*category style*/
 .category-section {
     display: flex;
