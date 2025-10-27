@@ -42,6 +42,11 @@
 							<input type="submit" value="削除">
 						</form>
 					</td>
+					 <td>
+            			<img src="images/<%=prod.getId()%>.png" 
+                 			alt="<%=prod.getName()%>" 
+                 			style="width:120px; height:auto; border-radius:6px;">
+        			</td>
 					<td><%=prod.getCategory() %></td>
 					<td><%=prod.getId() %></td>
 					<td><%=prod.getName() %></td>

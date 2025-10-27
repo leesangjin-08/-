@@ -57,9 +57,9 @@
             <h4><%=prod.getName()%></h4>
             <p><%=prod.getPriceString()%></p>
             <form action="add-prod-servlet" method="POST">
-                <input type="hidden" name="idx" value="<%=idx%>">
-                <input type="submit" value="選択">
-            </form>
+    			<input type="hidden" name="idx" value="<%=listProd.indexOf(prod)%>">
+    			<input type="submit" value="選択">
+			</form>
         </div>
         <% } %>
     </div>
