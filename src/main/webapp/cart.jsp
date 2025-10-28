@@ -29,7 +29,7 @@
 	%>
 			<table class="cart-list">
 			<tr>
-				<th></th><th>商品分流</th><th>商品ID</th><th>商品名</th><th>価格</th>
+				<th></th><th>商品イメージ</th><th>商品分流</th><th>商品ID</th><th>商品名</th><th>価格</th>
 			</tr>
 	<%
 			for (int idx = 0; idx < listProd.size(); idx++) {
